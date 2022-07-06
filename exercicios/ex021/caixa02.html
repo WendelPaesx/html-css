@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(169, 172, 175);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.52);
+           
+
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: rgb(30, 79, 226);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            color: blueviolet;
+        
+
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.446);
+
+
+
+        }
+        section{
+            background-color: rgb(179, 163, 163);
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            font-weight: bold;
+            box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.408);
+
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin:0px;
+
+        }
+        article{
+            background-color: lightgray;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.402);
+            padding: 10px 10px 10px 10px;
+            
+
+
+        }
+        article > aside{
+            background-color: rgb(227, 26, 26);
+            text-align: center;
+        }
+
+        footer > p{
+            margin: 4px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: aliceblue;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.493);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>ESPORTES E POLITICA</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2> noticias sobre o brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vero qui labore. Natus, ea! Dolore asperiores distinctio error ratione eligendi numquam repudiandae debitis ducimus, veritatis soluta nemo nesciunt maxime voluptate?</p>
+
+            </article>
+            <article>
+                <aside>
+                    <p>Wendel em entrevista.</p>
+                </aside>
+
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>artigo escrito por Wendel Paes</p>
+
+    </footer>
+    <div id="bola"></div>
+    
+</body>
+</html>
