@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        table{
+            position: relative;
+            width: 400px;
+            height: 200px;
+            margin: 10px;
+            border-collapse: collapse;
+
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.64);
+            border: 1px solid black;
+        }
+        th{
+           box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.429);
+            border: 1px solid black; 
+            padding: 5px;
+
+        }
+        tr{
+            background-color: rgba(183, 183, 183, 0.56);
+            
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        thead{
+
+            background-color: gray;
+            color: aliceblue;
+        }
+        thead >tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray
+
+        }
+        .dado{
+            text-align: right;
+        }
+        
+        tbody > tr:nth-child(odd){
+            background-color: aliceblue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        CAPTION
+
+        THEAD
+            TR,TD,TH
+        TBODY
+            TR,TD,TH
+        TFOOT
+            TR,TF,TH -->
+
+<table>
+    <caption>População de parte das Unidades Federativas</caption>
+    <thead>
+        <tr>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width:50px;">população</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td class="dado">46 649 132</td>
+
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="dado">19 597 330</td>
+
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="dado">15 989 929</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="dado">14 016 906</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="dado">10 444 526</td>
+
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="dado">19 597 330</td>
+
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="dado">15 989 929</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="dado">14 016 906</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="dado">10 444 526</td>
+
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="dado">19 597 330</td>
+
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="dado">15 989 929</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="dado">14 016 906</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="dado">10 444 526</td>
+
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="dado">19 597 330</td>
+
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="dado">15 989 929</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="dado">14 016 906</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="dado">10 444 526</td>
+
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="dado">19 597 330</td>
+
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="dado">15 989 929</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="dado">14 016 906</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="dado">10 444 526</td>
+
+        </tr>
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <th scope="row">Total de Habitantes</th>
+            <td class="dado">106.697.823</td>
+        </tr>
+
+    </tfoot>
+</table>
+    
+</body>
+</html>
